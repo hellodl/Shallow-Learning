@@ -28,7 +28,7 @@ class DataBuilder():
         print('%d images are found in the train directory.' % len(g))
         shuf = np.random.permutation(g)
 
-        # move a mount of images into valid directory
+        # move a certain number of images into valid directory
         for i in range(self.valid_size):
             os.rename(shuf[i], self.DATA_HOME_DIR+'/valid_redux/'+os.path.split(shuf[i])[-1])
 
