@@ -24,9 +24,7 @@ class DataBuilder():
     def importData(self):
         print("Import data to the related directories...")
         # codes here
-        # subprocess.call("cd train_redux", shell=True)
         g = glob.glob('./train_redux/*.jpg')
-        # g0 = [os.path.split(x)[-1] for x in g]
         print('%d images are found in the train directory.' % len(g))
         shuf = np.random.permutation(g)
 
